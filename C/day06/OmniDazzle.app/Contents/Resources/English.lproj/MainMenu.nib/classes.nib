@@ -1,0 +1,89 @@
+{
+    IBClasses =     (
+                {
+            ACTIONS =             {
+                goToOmniStore = id;
+                openDisplayPreferences = id;
+                quit = id;
+                sendFeedback = id;
+                showFAQ = id;
+                showLicenses = id;
+                showPluginConfiguration = id;
+                showPreferencesPanel = id;
+                showReleaseNotes = id;
+                toggleEventRecording = id;
+                toggleMenuStatusItem = id;
+            };
+            CLASS = Controller;
+            LANGUAGE = ObjC;
+            OUTLETS =             {
+                "_displayAlertPanel" = NSPanel;
+                "_fileMenu" = NSMenuItem;
+            };
+            SUPERCLASS = OAController;
+        },
+                {
+            ACTIONS =             {
+                toggleShowHiddenPlugins = id;
+            };
+            CLASS = FirstResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                checkForNewVersion = id;
+            };
+            CLASS = NSApplication;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSResponder;
+        },
+                {
+            CLASS = NSObject;
+            LANGUAGE = ObjC;
+        },
+                {
+            CLASS = NSResponder;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            ACTIONS =             {
+                closeAllMainWindows = id;
+                cycleToNextMainWindow = id;
+                cycleToPreviousMainWindow = id;
+                miniaturizeAll = id;
+                showPreferencesPanel = id;
+                toggleInspectorPanel = id;
+            };
+            CLASS = OAApplication;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSApplication;
+        },
+                {
+            ACTIONS =             {
+                hideAboutPanel = id;
+                showAboutPanel = id;
+            };
+            CLASS = OAController;
+            LANGUAGE = ObjC;
+            SUPERCLASS = OFController;
+        },
+                {
+            CLASS = OBObject;
+            LANGUAGE = ObjC;
+            SUPERCLASS = NSObject;
+        },
+                {
+            CLASS = OFController;
+            LANGUAGE = ObjC;
+            SUPERCLASS = OFObject;
+        },
+                {
+            CLASS = OFObject;
+            LANGUAGE = ObjC;
+            SUPERCLASS = OBObject;
+        }
+    );
+    IBVersion = 1;
+}

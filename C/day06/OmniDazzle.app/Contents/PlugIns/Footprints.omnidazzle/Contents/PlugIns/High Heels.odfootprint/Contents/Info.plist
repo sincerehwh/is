@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>High Heels</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.omnigroup.OmniDazzle.Footprint.High Heels</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>displayName</key>
+	<string>High Heels</string>
+	<key>image</key>
+	<string>High Heels.pdf</string>
+	<key>sounds</key>
+	<array>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>shoe1</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>shoe2</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>shoe3</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>shoe4</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>shoe5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

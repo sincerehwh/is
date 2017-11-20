@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = ODEventSourceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controlView = NSView; }; 
+            SUPERCLASS = NSObjectController; 
+        }, 
+        {
+            CLASS = ODEventSourceControllerProxy; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = ODEventSourceController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {mouseButtonClicked = id; }; 
+            CLASS = ODMouseButtonEventSourceController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = ODEventSourceController; 
+        }, 
+        {
+            CLASS = "_ODMouseButtonEventSourceConfigurationButton"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSButton; 
+        }
+    ); 
+    IBVersion = 1; 
+}

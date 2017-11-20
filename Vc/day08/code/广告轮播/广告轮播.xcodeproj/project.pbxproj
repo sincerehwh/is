@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8536FFE11C17BFBE0003587C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536FFE01C17BFBE0003587C /* main.m */; };
+		8536FFE41C17BFBE0003587C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536FFE31C17BFBE0003587C /* AppDelegate.m */; };
+		8536FFEC1C17BFBE0003587C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8536FFEB1C17BFBE0003587C /* Assets.xcassets */; };
+		8536FFEF1C17BFBE0003587C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8536FFED1C17BFBE0003587C /* LaunchScreen.storyboard */; };
+		8536FFF91C17C02B0003587C /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8536FFF71C17C02B0003587C /* AdViewController.m */; };
+		8536FFFA1C17C02B0003587C /* AdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8536FFF81C17C02B0003587C /* AdViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8536FFDC1C17BFBE0003587C /* 广告轮播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "广告轮播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8536FFE01C17BFBE0003587C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8536FFE21C17BFBE0003587C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8536FFE31C17BFBE0003587C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8536FFEB1C17BFBE0003587C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8536FFEE1C17BFBE0003587C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8536FFF01C17BFBE0003587C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8536FFF61C17C02B0003587C /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		8536FFF71C17C02B0003587C /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		8536FFF81C17C02B0003587C /* AdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8536FFD91C17BFBE0003587C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8536FFD31C17BFBE0003587C = {
+			isa = PBXGroup;
+			children = (
+				8536FFDE1C17BFBE0003587C /* 广告轮播 */,
+				8536FFDD1C17BFBE0003587C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8536FFDD1C17BFBE0003587C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8536FFDC1C17BFBE0003587C /* 广告轮播.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8536FFDE1C17BFBE0003587C /* 广告轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				8536FFE21C17BFBE0003587C /* AppDelegate.h */,
+				8536FFE31C17BFBE0003587C /* AppDelegate.m */,
+				8536FFF61C17C02B0003587C /* AdViewController.h */,
+				8536FFF71C17C02B0003587C /* AdViewController.m */,
+				8536FFF81C17C02B0003587C /* AdViewController.xib */,
+				8536FFEB1C17BFBE0003587C /* Assets.xcassets */,
+				8536FFED1C17BFBE0003587C /* LaunchScreen.storyboard */,
+				8536FFF01C17BFBE0003587C /* Info.plist */,
+				8536FFDF1C17BFBE0003587C /* Supporting Files */,
+			);
+			path = "广告轮播";
+			sourceTree = "<group>";
+		};
+		8536FFDF1C17BFBE0003587C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8536FFE01C17BFBE0003587C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8536FFDB1C17BFBE0003587C /* 广告轮播 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8536FFF31C17BFBE0003587C /* Build configuration list for PBXNativeTarget "广告轮播" */;
+			buildPhases = (
+				8536FFD81C17BFBE0003587C /* Sources */,
+				8536FFD91C17BFBE0003587C /* Frameworks */,
+				8536FFDA1C17BFBE0003587C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "广告轮播";
+			productName = "广告轮播";
+			productReference = 8536FFDC1C17BFBE0003587C /* 广告轮播.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8536FFD41C17BFBE0003587C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Tarena;
+				TargetAttributes = {
+					8536FFDB1C17BFBE0003587C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 8536FFD71C17BFBE0003587C /* Build configuration list for PBXProject "广告轮播" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8536FFD31C17BFBE0003587C;
+			productRefGroup = 8536FFDD1C17BFBE0003587C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8536FFDB1C17BFBE0003587C /* 广告轮播 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8536FFDA1C17BFBE0003587C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8536FFEF1C17BFBE0003587C /* LaunchScreen.storyboard in Resources */,
+				8536FFFA1C17C02B0003587C /* AdViewController.xib in Resources */,
+				8536FFEC1C17BFBE0003587C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8536FFD81C17BFBE0003587C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8536FFF91C17C02B0003587C /* AdViewController.m in Sources */,
+				8536FFE41C17BFBE0003587C /* AppDelegate.m in Sources */,
+				8536FFE11C17BFBE0003587C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8536FFED1C17BFBE0003587C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8536FFEE1C17BFBE0003587C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8536FFF11C17BFBE0003587C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8536FFF21C17BFBE0003587C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8536FFF41C17BFBE0003587C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "广告轮播/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8536FFF51C17BFBE0003587C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "广告轮播/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8536FFD71C17BFBE0003587C /* Build configuration list for PBXProject "广告轮播" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8536FFF11C17BFBE0003587C /* Debug */,
+				8536FFF21C17BFBE0003587C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8536FFF31C17BFBE0003587C /* Build configuration list for PBXNativeTarget "广告轮播" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8536FFF41C17BFBE0003587C /* Debug */,
+				8536FFF51C17BFBE0003587C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8536FFD41C17BFBE0003587C /* Project object */;
+}

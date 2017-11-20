@@ -1,0 +1,33 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/Cutout/BorderSolid.cikernel 66043 2005-07-25 21:17:05Z kc $
+
+kernel vec4 rectangle(vec2 center, float halfWidth, float halfHeight, float cornerRadius)
+{
+  float halfEdgeWidth = 0.5;  // This is hard coded for now since we use a guassian blur to form the real edge.
+  
+  vec2 __dest = destCoord();
+
+  // Symmetric in the four quadrants of the rectangle
+  vec2 vectorFromCenter  = abs(__dest - center);
+
+  vec2 rectCorner = vec2(halfWidth, halfHeight);
+
+  vec2 cornerOrigin =  rectCorner - vec2(cornerRadius, cornerRadius);
+  vec2 vectorFromCornerOrigin = vectorFromCenter - cornerOrigin;
+  float distanceFromCornerOrigin = length(vectorFromCornerOrigin);
+  float distanceFromCircleEdge  = clamp(cornerRadius - distanceFromCornerOrigin, -halfEdgeWidth, halfEdgeWidth);
+  float percentCorner = distanceFromCircleEdge / (2.0*halfEdgeWidth) + 0.5;
+
+  vec2 distFromEdges = clamp(rectCorner - vectorFromCenter, -halfEdgeWidth, halfEdgeWidth);
+
+  vec2 percentEdges = distFromEdges / (2.0*halfEdgeWidth) + 0.5;
+
+  float percentEdge = percentEdges.x * percentEdges.y;
+
+  bool cornerOrEdge = (vectorFromCenter.x > halfWidth - cornerRadius) ?  (vectorFromCenter.y > halfHeight - cornerRadius) : false;
+
+  float percent = cornerOrEdge  ? percentCorner : percentEdge;
+  percent = 1.0 - percent;
+  return vec4(percent, percent, percent, 1.0);
+}

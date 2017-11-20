@@ -1,0 +1,11 @@
+// Copyright 2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/Application/ODAlphaScaleFilter.h 66043 2005-07-25 21:17:05Z kc $
+
+kernel vec4 footprint(sampler image, float scale, __color color)
+{
+    vec4 p = sample(image, samplerCoord(image)); // Assumed to be a xxxA map
+    vec4 result = vec4(color.r, color.g, color.b, color.a * p.a * scale);
+    
+    return premultiply(result);
+}

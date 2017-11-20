@@ -1,0 +1,16 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+
+kernel vec4 flashlight(__color innerColor, __color outerColor, float radius, float sharpness)
+{
+  float blurWidth = 30.0; // must match constant in source code
+  vec2 vectorFromCenter  = destCoord(); // center at (0,0)
+  float distanceFromCenter = length(vectorFromCenter);
+
+  float dist = clamp(distanceFromCenter - radius + blurWidth, 0.0, blurWidth) / blurWidth;
+  dist = pow(dist, sharpness);
+
+  // ATI hates us
+  dist = (dist > 0.99) ? 1.0 : dist;
+  
+  return mix(innerColor, outerColor, dist);
+}

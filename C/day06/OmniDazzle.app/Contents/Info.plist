@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>omnidazzle</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.omnigroup.OmniDazzle.plugin</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<true/>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>OmniDazzle</string>
+	<key>CFBundleGetInfoString</key>
+	<string>OmniDazzle 1.1.1, version 15.18, © 2006-2007, 2009 The Omni Group</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>OmniDazzle Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>OmniDazzle Help</string>
+	<key>CFBundleIconFile</key>
+	<string>OmniDazzle</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.omnigroup.OmniDazzle</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>OmniDazzle</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleSignature</key>
+	<string>ODZL</string>
+	<key>CFBundleVersion</key>
+	<string>15.18</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.4.6</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2006-2007, 2009 The Omni Group</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>ODApplication</string>
+	<key>NSSupportsSuddenTermination</key>
+	<true/>
+	<key>OAAboutPanelControllerClass</key>
+	<string>AboutPanelController</string>
+	<key>ODBaseRequirements</key>
+	<dict>
+		<key>op</key>
+		<string>and</string>
+		<key>qualifiers</key>
+		<array>
+			<dict>
+				<key>op</key>
+				<string>=</string>
+				<key>path</key>
+				<string>opengl.extensions.GL_EXT_framebuffer_object</string>
+				<key>value</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>op</key>
+				<string>=</string>
+				<key>path</key>
+				<string>opengl.extensions.GL_ARB_texture_rectangle</string>
+				<key>value</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<key>OFBundleRegistryConfig</key>
+	<dict>
+		<key>AdditionalRegistrations</key>
+		<array>
+			<string>~/Library/OmniDazzle.defaults</string>
+			<string>/Library/OmniDazzle.defaults</string>
+			<string>/Network/Library/OmniDazzle.defaults</string>
+			<string>/System/Library/OmniDazzle.defaults</string>
+		</array>
+		<key>BundleExtensions</key>
+		<array>
+			<string>omnidazzle</string>
+		</array>
+		<key>LogBundleRegistration</key>
+		<false/>
+		<key>SearchPaths</key>
+		<array>
+			<string>~/Library/Application Support/OmniDazzle/Plug-Ins</string>
+			<string>/Library/Application Support/OmniDazzle/Plug-Ins</string>
+			<string>/Network/Library/Application Support/OmniDazzle/Plug-Ins</string>
+			<string>/System/Library/Application Support/OmniDazzle/Plug-Ins</string>
+			<string>AppWrapper</string>
+		</array>
+	</dict>
+	<key>OFControllerClass</key>
+	<string>Controller</string>
+	<key>OFRegistrations</key>
+	<dict>
+		<key>NSUserDefaults</key>
+		<dict>
+			<key>defaultsDictionary</key>
+			<dict>
+				<key>AddMenuStatusItem</key>
+				<true/>
+				<key>FeedbackAddress</key>
+				<string>omnidazzle@omnigroup.com</string>
+				<key>OAColorInspectorShowsAlpha</key>
+				<true/>
+				<key>SelectedPluginIdentifier</key>
+				<string>com.omnigroup.OmniDazzle.PixieDust/Default</string>
+				<key>hiddenPlugins</key>
+				<array/>
+			</dict>
+		</dict>
+	</dict>
+	<key>OSUSoftwareUpdateAtLaunch</key>
+	<true/>
+	<key>OSUSoftwareUpdateTrack</key>
+	<string></string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.bundle</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>OmniDazzle Plugin</string>
+			<key>UTTypeIconName</key>
+			<string>OmniDazzlePlugin.icns</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.omnigroup.OmniDazzle.plugin</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>omnidazzle</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

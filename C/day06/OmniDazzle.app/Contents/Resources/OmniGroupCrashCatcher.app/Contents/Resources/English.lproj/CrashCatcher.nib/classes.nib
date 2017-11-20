@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {sendReportAndQuit = id; }; 
+            CLASS = CrashCatcherController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                applicationNameTextField = NSTextField; 
+                reportButton = NSButton; 
+                stackTraceTextView = NSTextView; 
+                userDetailsSplitView = OASplitView; 
+                userDetailsTextView = NSTextView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {jumpToSelection = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {enterSelection = id; findNext = id; findPrevious = id; showFindPanel = id; }; 
+            CLASS = OAFindController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                findNextButton = id; 
+                findPanel = id; 
+                findPreviousButton = id; 
+                ignoreCaseButton = id; 
+                searchTextForm = id; 
+            }; 
+            SUPERCLASS = OFObject; 
+        }, 
+        {CLASS = OASplitView; LANGUAGE = ObjC; SUPERCLASS = NSSplitView; }, 
+        {CLASS = OBObject; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = OFObject; LANGUAGE = ObjC; SUPERCLASS = OBObject; }
+    ); 
+    IBVersion = 1; 
+}

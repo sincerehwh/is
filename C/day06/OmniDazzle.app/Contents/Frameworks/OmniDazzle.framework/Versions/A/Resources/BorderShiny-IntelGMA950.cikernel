@@ -1,0 +1,74 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/Cutout/BorderSolid.cikernel 66043 2005-07-25 21:17:05Z kc $
+
+float linearLevelToHalfCircle(float level, sampler linearToCircleMap)
+{
+    // Map the range 0..1 to a half-circle  y=sqrt(1-(2*x-1)^2)
+    level = 2.0*level - 1.0;
+    level = sqrt(1.0 - level*level);  
+    
+    return level;
+}
+
+// Returns the normal in (x,y,z).  Returns base height, [0..1], at this position in w.
+vec4 gradient(sampler image, sampler linearToCircleMap)
+{
+  vec2 coord = samplerCoord(image);
+
+  float lin00 = sample(image, coord).r;
+  float lin10 = sample(image, coord + vec2(1.0, 0.0)).r;
+  float lin01 = sample(image, coord + vec2(0.0, 1.0)).r;
+  float lin11 = sample(image, coord + vec2(1.0, 1.0)).r;
+  
+  // Compute two cross products  dx vs dxy and dxy vs dy
+  float circ00 = linearLevelToHalfCircle(lin00, linearToCircleMap);
+  float circ10 = linearLevelToHalfCircle(lin10, linearToCircleMap);
+  float circ01 = linearLevelToHalfCircle(lin01, linearToCircleMap);
+  float circ11 = linearLevelToHalfCircle(lin11, linearToCircleMap);
+  
+  vec3 x1 = vec3(circ00 - circ10, circ10 - circ11, 1.0);
+  vec3 x2 = vec3(circ01 - circ11, circ00 - circ01, 1.0);
+  
+  vec3 n1 = normalize(x1);
+  vec3 n2 = normalize(x2);
+
+  // Average the two normals and renormalize
+  vec3 n = normalize(n1 + n2);
+  
+  return vec4(n.x, n.y, n.z, lin00);
+}
+
+vec4 ramp(float ramp, float borderWidth, __color color, __color edgeColor)
+{
+  // Ramp is from 0..1.  We'll scale up by the border width so we can get a 1px transition on each edge.
+  float x = clamp(ramp * borderWidth, 0.0, 1.0);
+  return mix(edgeColor, color, x);
+}
+
+vec4 rampShadow(float ramp, float borderWidth, vec4 baseColor)
+{
+  // Ramp is from 0..1.  We'll scale up by the border width so we can get a 1px transition on each edge.
+  float x = clamp(ramp * borderWidth, 0.0, 1.0);
+  return baseColor*(1.0-x) + vec4(0.0, 0.0, 0.0, x);
+}
+
+kernel vec4 glass(sampler image, sampler linearToCircleMap, __color interiorColor, __color glassColor, __color exteriorColor, float borderWidth)
+{
+  vec4 G = gradient(image, linearToCircleMap);  // nx,ny,nz,base
+  vec3 N = vec3(G);
+    
+  // Level of the grayscale map at this point.
+  float baseLevel = G.w;
+  
+  // Symmetric mapping of base level
+  float symLevel = (0.5 - abs(baseLevel - 0.5));
+  
+  vec4 baseColor = mix(interiorColor, exteriorColor, baseLevel);
+  
+  // As we go up from zero from the base level ramp to the glass color
+  baseColor = rampShadow(symLevel, borderWidth, baseColor);
+  
+  vec4 c = glassColor*(1.0-N.y) + vec4(N.y, N.y, N.y, N.y);
+  return ramp(symLevel, 0.33*borderWidth, c, baseColor);
+}

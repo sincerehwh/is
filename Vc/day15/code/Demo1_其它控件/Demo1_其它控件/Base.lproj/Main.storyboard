@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dTE-q9-871">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--分段控件-->
+        <scene sceneID="Y4Q-1q-abl">
+            <objects>
+                <viewController id="UEj-oX-o4i" customClass="SegmentsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JgA-cb-blO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlV-hr-zKg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ynF-hV-Vun">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fbb01" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-1C-Fxk">
+                                <rect key="frame" x="40" y="94" width="255" height="284"/>
+                                <animations/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U8h-W3-Apx">
+                                <rect key="frame" x="40" y="42" width="250" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="张三"/>
+                                    <segment title="李四"/>
+                                    <segment title="王五"/>
+                                </segments>
+                                <connections>
+                                    <action selector="clickButton:" destination="UEj-oX-o4i" eventType="valueChanged" id="bui-y2-Hfs"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="分段控件" id="vOc-Yq-xBN"/>
+                    <connections>
+                        <outlet property="headerImageView" destination="lrS-1C-Fxk" id="KjI-bg-oso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfb-fw-Xce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="-331"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d4E-BF-X3z">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dTE-q9-871" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="0dG-qc-B9v">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UEj-oX-o4i" kind="relationship" relationship="viewControllers" id="cAO-Th-kr0"/>
+                        <segue destination="21M-uy-dpe" kind="relationship" relationship="viewControllers" id="rs0-6O-iyT"/>
+                        <segue destination="VBY-At-uaV" kind="relationship" relationship="viewControllers" id="TFr-Zr-muN"/>
+                        <segue destination="bCd-3N-Hwe" kind="relationship" relationship="viewControllers" id="59h-rM-fpb"/>
+                        <segue destination="mTh-wP-xKI" kind="relationship" relationship="viewControllers" id="tv0-KA-dE2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYy-Iu-VKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="239"/>
+        </scene>
+        <!--自定义选择器 -->
+        <scene sceneID="DSM-LO-36f">
+            <objects>
+                <viewController id="mTh-wP-xKI" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pVz-uh-2Cd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nsv-fb-rzd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gGq-Zu-g1h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WXi-E9-V8U">
+                                <rect key="frame" x="0.0" y="64" width="320" height="144"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mTh-wP-xKI" id="yzX-IZ-fav"/>
+                                    <outlet property="delegate" destination="mTh-wP-xKI" id="vtY-OR-8mr"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="自定义选择器 " id="f0V-ps-Vn6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtK-vN-qmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="316"/>
+        </scene>
+        <!--日期选择器-->
+        <scene sceneID="XwW-mA-7Oi">
+            <objects>
+                <viewController id="bCd-3N-Hwe" customClass="DatePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTm-ae-COW"/>
+                        <viewControllerLayoutGuide type="bottom" id="je7-D8-2i6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="us2-Is-Fad">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="RcG-9m-bil">
+                                <rect key="frame" x="0.0" y="71" width="320" height="188"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="472103103.95138901">
+                                    <!--2015-12-18 03:45:03 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="zh-Hans"/>
+                                <connections>
+                                    <action selector="chooseDate:" destination="bCd-3N-Hwe" eventType="valueChanged" id="tDn-DA-rPt"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-j4-Tbt">
+                                <rect key="frame" x="7" y="314" width="305" height="52"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="日期选择器" id="q5Q-uV-hhu"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="P7D-j4-Tbt" id="etN-KN-H3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEi-su-bzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405" y="-316"/>
+        </scene>
+        <!--进度条-->
+        <scene sceneID="75U-4d-BX3">
+            <objects>
+                <viewController id="VBY-At-uaV" customClass="ProgressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YbH-Yz-7bA"/>
+                        <viewControllerLayoutGuide type="bottom" id="2OH-rP-nnr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M3S-dH-aSz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bFS-4k-uoK">
+                                <rect key="frame" x="44" y="154" width="256" height="2"/>
+                                <animations/>
+                            </progressView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="进度条" id="Ake-eE-xdg"/>
+                    <connections>
+                        <outlet property="myProgressView" destination="bFS-4k-uoK" id="xPj-rb-dwl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWh-po-6cb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-323"/>
+        </scene>
+        <!--活动指示器-->
+        <scene sceneID="FrE-tj-etQ">
+            <objects>
+                <viewController id="21M-uy-dpe" customClass="ActivityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xy4-J0-HYy"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8M-ne-hNM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhy-4C-4cX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mus-wG-fpN">
+                                <rect key="frame" x="39" y="172" width="97" height="32"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="启动"/>
+                                <connections>
+                                    <action selector="start:" destination="21M-uy-dpe" eventType="touchUpInside" id="wZZ-Ap-bwV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVO-nB-uW5">
+                                <rect key="frame" x="184" y="172" width="102" height="32"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="21M-uy-dpe" eventType="touchUpInside" id="wT1-A6-GYt"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-LS-Oem">
+                                <rect key="frame" x="147" y="80" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="活动指示器" id="F9h-H2-bpm"/>
+                    <connections>
+                        <outlet property="myActivity" destination="yAt-LS-Oem" id="vHs-IP-eXp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybe-5c-67O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="-331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fbb01" width="730" height="456"/>
+    </resources>
+</document>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="allButtons" destination="hhP-ro-DKg" id="vRd-T8-ONE"/>
+                <outletCollection property="allButtons" destination="oYf-uE-jNs" id="yIr-kd-nuv"/>
+                <outletCollection property="allButtons" destination="kRC-aw-sZE" id="YsK-mg-zXx"/>
+                <outletCollection property="allButtons" destination="RRn-hZ-iVD" id="A4a-sv-mox"/>
+                <outletCollection property="allButtons" destination="Ffa-vP-UEG" id="umh-b6-APh"/>
+                <outletCollection property="allButtons" destination="oxh-OU-Xjk" id="LWX-WB-UgX"/>
+                <outletCollection property="allButtons" destination="69T-mP-a1w" id="wc4-fr-pEm"/>
+                <outletCollection property="allButtons" destination="dS8-TX-Prj" id="eSZ-ka-8Jl"/>
+                <outletCollection property="allButtons" destination="25c-gF-i4E" id="5XE-s3-zLL"/>
+                <outletCollection property="allButtons" destination="MpH-6U-cp1" id="iZQ-b1-wKx"/>
+                <outletCollection property="allButtons" destination="AX4-On-h2u" id="rzU-Wq-0db"/>
+                <outletCollection property="allButtons" destination="lrs-Dd-Lda" id="lcS-SY-V5G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-ro-DKg">
+                    <rect key="frame" x="15" y="52" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="Bdc-kJ-IxW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYf-uE-jNs">
+                    <rect key="frame" x="89" y="52" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="Ex2-AH-sAL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRC-aw-sZE">
+                    <rect key="frame" x="166" y="52" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="Ouk-bx-3s1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRn-hZ-iVD">
+                    <rect key="frame" x="240" y="52" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="NoD-HP-Wwc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffa-vP-UEG">
+                    <rect key="frame" x="15" y="157" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="Hrs-2x-gHs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxh-OU-Xjk">
+                    <rect key="frame" x="89" y="157" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="hWX-2b-tf7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69T-mP-a1w">
+                    <rect key="frame" x="166" y="157" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="LGL-Z8-Pzb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS8-TX-Prj">
+                    <rect key="frame" x="240" y="157" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="bZE-1d-d9k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpH-6U-cp1">
+                    <rect key="frame" x="89" y="264" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="8cc-JL-geO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-On-h2u">
+                    <rect key="frame" x="166" y="264" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="4fm-s9-11G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrs-Dd-Lda">
+                    <rect key="frame" x="240" y="264" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="Bhy-E4-DKL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25c-gF-i4E">
+                    <rect key="frame" x="15" y="264" width="66" height="91"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <state key="normal" title="♥️A" backgroundImage="cardfront.png"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="cr8-ZD-7Ji"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="309" y="236"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardfront.png" width="79" height="120"/>
+    </resources>
+</document>

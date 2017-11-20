@@ -1,0 +1,35 @@
+// Copyright 2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/Cutout/CircleShapeFilter.cikernel 66043 2005-07-25 21:17:05Z kc $
+
+float ramp(float dist, float radius, float scale, float rampSize)
+{
+  float x = dist * scale;
+  float y = sin(x);
+  return (clamp(y, -rampSize, rampSize) + rampSize) * 1.0/(2.0* rampSize);
+}
+
+kernel vec4 bullseye(float radius, float scale, __color evenColor, __color oddColor)
+{
+  vec2 vectorFromCenter  = destCoord (); // center at (0,0)
+  float distanceFromCenter = length(vectorFromCenter);
+  float interiorRampSize = 0.5*scale;
+  
+  // This is an idealized ramp  
+  float interiorRamp = ramp(distanceFromCenter, radius, scale, interiorRampSize);
+
+  // In the center, don't have a tiny little dot.  The inner color is always the 1.0 color.
+  interiorRamp = (distanceFromCenter <= 0.5) ? 1.0 : interiorRamp;
+  
+  float subInteriorRamp = ramp(distanceFromCenter-1.0, radius, scale, interiorRampSize);
+  float closestRampEdge = subInteriorRamp <= 0.5 ? 0.0 : 1.0;
+  
+  interiorRamp = (distanceFromCenter >= (radius - 0.5)) ? closestRampEdge : interiorRamp;
+  __color innerColor = mix(evenColor, oddColor, interiorRamp);
+  
+  float halfEdgeWidth = 0.5;
+  float distantceFromEdge = clamp(radius - distanceFromCenter, -halfEdgeWidth, halfEdgeWidth);
+  float percent = 1.0 - (distantceFromEdge / (2.0*halfEdgeWidth) + 0.5);
+  return mix(innerColor, vec4(0, 0, 0, 0), percent);
+  return vec4(percent, percent, percent, 1.0);
+}

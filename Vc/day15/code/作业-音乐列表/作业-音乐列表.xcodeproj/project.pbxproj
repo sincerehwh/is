@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		856EB1AA1C23972400793923 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1A91C23972400793923 /* main.m */; };
+		856EB1AD1C23972400793923 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1AC1C23972400793923 /* AppDelegate.m */; };
+		856EB1B31C23972400793923 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856EB1B11C23972400793923 /* Main.storyboard */; };
+		856EB1B51C23972400793923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856EB1B41C23972400793923 /* Assets.xcassets */; };
+		856EB1B81C23972400793923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856EB1B61C23972400793923 /* LaunchScreen.storyboard */; };
+		856EB1C41C23977B00793923 /* TRMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1C11C23977B00793923 /* TRMusic.m */; };
+		856EB1C51C23977B00793923 /* TRMusicGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1C31C23977B00793923 /* TRMusicGroup.m */; };
+		856EB1C81C239ABA00793923 /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1C71C239ABA00793923 /* MusicCell.m */; };
+		856EB1CB1C239CA000793923 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856EB1CA1C239CA000793923 /* MusicTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		856EB1A51C23972400793923 /* 作业-音乐列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "作业-音乐列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		856EB1A91C23972400793923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		856EB1AB1C23972400793923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		856EB1AC1C23972400793923 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		856EB1B21C23972400793923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		856EB1B41C23972400793923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		856EB1B71C23972400793923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		856EB1B91C23972400793923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856EB1C01C23977B00793923 /* TRMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMusic.h; sourceTree = "<group>"; };
+		856EB1C11C23977B00793923 /* TRMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMusic.m; sourceTree = "<group>"; };
+		856EB1C21C23977B00793923 /* TRMusicGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMusicGroup.h; sourceTree = "<group>"; };
+		856EB1C31C23977B00793923 /* TRMusicGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMusicGroup.m; sourceTree = "<group>"; };
+		856EB1C61C239ABA00793923 /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
+		856EB1C71C239ABA00793923 /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
+		856EB1C91C239CA000793923 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		856EB1CA1C239CA000793923 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		856EB1A21C23972400793923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856EB19C1C23972400793923 = {
+			isa = PBXGroup;
+			children = (
+				856EB1A71C23972400793923 /* 作业-音乐列表 */,
+				856EB1A61C23972400793923 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		856EB1A61C23972400793923 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856EB1A51C23972400793923 /* 作业-音乐列表.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856EB1A71C23972400793923 /* 作业-音乐列表 */ = {
+			isa = PBXGroup;
+			children = (
+				856EB1AB1C23972400793923 /* AppDelegate.h */,
+				856EB1AC1C23972400793923 /* AppDelegate.m */,
+				856EB1BF1C23976E00793923 /* Model */,
+				856EB1B11C23972400793923 /* Main.storyboard */,
+				856EB1C61C239ABA00793923 /* MusicCell.h */,
+				856EB1C71C239ABA00793923 /* MusicCell.m */,
+				856EB1C91C239CA000793923 /* MusicTableViewController.h */,
+				856EB1CA1C239CA000793923 /* MusicTableViewController.m */,
+				856EB1B41C23972400793923 /* Assets.xcassets */,
+				856EB1B61C23972400793923 /* LaunchScreen.storyboard */,
+				856EB1B91C23972400793923 /* Info.plist */,
+				856EB1A81C23972400793923 /* Supporting Files */,
+			);
+			path = "作业-音乐列表";
+			sourceTree = "<group>";
+		};
+		856EB1A81C23972400793923 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856EB1A91C23972400793923 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		856EB1BF1C23976E00793923 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				856EB1C01C23977B00793923 /* TRMusic.h */,
+				856EB1C11C23977B00793923 /* TRMusic.m */,
+				856EB1C21C23977B00793923 /* TRMusicGroup.h */,
+				856EB1C31C23977B00793923 /* TRMusicGroup.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		856EB1A41C23972400793923 /* 作业-音乐列表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856EB1BC1C23972400793923 /* Build configuration list for PBXNativeTarget "作业-音乐列表" */;
+			buildPhases = (
+				856EB1A11C23972400793923 /* Sources */,
+				856EB1A21C23972400793923 /* Frameworks */,
+				856EB1A31C23972400793923 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "作业-音乐列表";
+			productName = "作业-音乐列表";
+			productReference = 856EB1A51C23972400793923 /* 作业-音乐列表.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856EB19D1C23972400793923 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Tarena;
+				TargetAttributes = {
+					856EB1A41C23972400793923 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 856EB1A01C23972400793923 /* Build configuration list for PBXProject "作业-音乐列表" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 856EB19C1C23972400793923;
+			productRefGroup = 856EB1A61C23972400793923 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856EB1A41C23972400793923 /* 作业-音乐列表 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		856EB1A31C23972400793923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856EB1B81C23972400793923 /* LaunchScreen.storyboard in Resources */,
+				856EB1B51C23972400793923 /* Assets.xcassets in Resources */,
+				856EB1B31C23972400793923 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		856EB1A11C23972400793923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856EB1AD1C23972400793923 /* AppDelegate.m in Sources */,
+				856EB1CB1C239CA000793923 /* MusicTableViewController.m in Sources */,
+				856EB1AA1C23972400793923 /* main.m in Sources */,
+				856EB1C51C23977B00793923 /* TRMusicGroup.m in Sources */,
+				856EB1C41C23977B00793923 /* TRMusic.m in Sources */,
+				856EB1C81C239ABA00793923 /* MusicCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		856EB1B11C23972400793923 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856EB1B21C23972400793923 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		856EB1B61C23972400793923 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856EB1B71C23972400793923 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		856EB1BA1C23972400793923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		856EB1BB1C23972400793923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		856EB1BD1C23972400793923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "作业-音乐列表/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		856EB1BE1C23972400793923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "作业-音乐列表/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.tedu.-------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		856EB1A01C23972400793923 /* Build configuration list for PBXProject "作业-音乐列表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856EB1BA1C23972400793923 /* Debug */,
+				856EB1BB1C23972400793923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856EB1BC1C23972400793923 /* Build configuration list for PBXNativeTarget "作业-音乐列表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856EB1BD1C23972400793923 /* Debug */,
+				856EB1BE1C23972400793923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 856EB19D1C23972400793923 /* Project object */;
+}

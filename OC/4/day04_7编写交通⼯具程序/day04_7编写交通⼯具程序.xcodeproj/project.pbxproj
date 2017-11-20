@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85D827481BAFF75800191970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D827471BAFF75800191970 /* main.m */; };
+		85D827501BAFF77A00191970 /* TRTransportation.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D8274F1BAFF77A00191970 /* TRTransportation.m */; };
+		85D827531BAFF7FB00191970 /* TRTaxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D827521BAFF7FB00191970 /* TRTaxi.m */; };
+		85D827561BAFF84000191970 /* TRBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D827551BAFF84000191970 /* TRBus.m */; };
+		85D827591BAFF87400191970 /* TRBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D827581BAFF87400191970 /* TRBike.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85D827421BAFF75800191970 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85D827441BAFF75800191970 /* day04_7编写交通⼯具程序 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "day04_7编写交通⼯具程序"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D827471BAFF75800191970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85D8274E1BAFF77A00191970 /* TRTransportation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTransportation.h; sourceTree = "<group>"; };
+		85D8274F1BAFF77A00191970 /* TRTransportation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTransportation.m; sourceTree = "<group>"; };
+		85D827511BAFF7FB00191970 /* TRTaxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTaxi.h; sourceTree = "<group>"; };
+		85D827521BAFF7FB00191970 /* TRTaxi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTaxi.m; sourceTree = "<group>"; };
+		85D827541BAFF84000191970 /* TRBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBus.h; sourceTree = "<group>"; };
+		85D827551BAFF84000191970 /* TRBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBus.m; sourceTree = "<group>"; };
+		85D827571BAFF87400191970 /* TRBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBike.h; sourceTree = "<group>"; };
+		85D827581BAFF87400191970 /* TRBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBike.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85D827411BAFF75800191970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85D8273B1BAFF75800191970 = {
+			isa = PBXGroup;
+			children = (
+				85D827461BAFF75800191970 /* day04_7编写交通⼯具程序 */,
+				85D827451BAFF75800191970 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85D827451BAFF75800191970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D827441BAFF75800191970 /* day04_7编写交通⼯具程序 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85D827461BAFF75800191970 /* day04_7编写交通⼯具程序 */ = {
+			isa = PBXGroup;
+			children = (
+				85D827471BAFF75800191970 /* main.m */,
+				85D8274E1BAFF77A00191970 /* TRTransportation.h */,
+				85D8274F1BAFF77A00191970 /* TRTransportation.m */,
+				85D827511BAFF7FB00191970 /* TRTaxi.h */,
+				85D827521BAFF7FB00191970 /* TRTaxi.m */,
+				85D827541BAFF84000191970 /* TRBus.h */,
+				85D827551BAFF84000191970 /* TRBus.m */,
+				85D827571BAFF87400191970 /* TRBike.h */,
+				85D827581BAFF87400191970 /* TRBike.m */,
+			);
+			path = "day04_7编写交通⼯具程序";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85D827431BAFF75800191970 /* day04_7编写交通⼯具程序 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D8274B1BAFF75800191970 /* Build configuration list for PBXNativeTarget "day04_7编写交通⼯具程序" */;
+			buildPhases = (
+				85D827401BAFF75800191970 /* Sources */,
+				85D827411BAFF75800191970 /* Frameworks */,
+				85D827421BAFF75800191970 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "day04_7编写交通⼯具程序";
+			productName = "day04_7编写交通⼯具程序";
+			productReference = 85D827441BAFF75800191970 /* day04_7编写交通⼯具程序 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85D8273C1BAFF75800191970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tarena;
+				TargetAttributes = {
+					85D827431BAFF75800191970 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 85D8273F1BAFF75800191970 /* Build configuration list for PBXProject "day04_7编写交通⼯具程序" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85D8273B1BAFF75800191970;
+			productRefGroup = 85D827451BAFF75800191970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D827431BAFF75800191970 /* day04_7编写交通⼯具程序 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85D827401BAFF75800191970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D827481BAFF75800191970 /* main.m in Sources */,
+				85D827591BAFF87400191970 /* TRBike.m in Sources */,
+				85D827501BAFF77A00191970 /* TRTransportation.m in Sources */,
+				85D827561BAFF84000191970 /* TRBus.m in Sources */,
+				85D827531BAFF7FB00191970 /* TRTaxi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		85D827491BAFF75800191970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		85D8274A1BAFF75800191970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		85D8274C1BAFF75800191970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85D8274D1BAFF75800191970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D8273F1BAFF75800191970 /* Build configuration list for PBXProject "day04_7编写交通⼯具程序" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D827491BAFF75800191970 /* Debug */,
+				85D8274A1BAFF75800191970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D8274B1BAFF75800191970 /* Build configuration list for PBXNativeTarget "day04_7编写交通⼯具程序" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D8274C1BAFF75800191970 /* Debug */,
+				85D8274D1BAFF75800191970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85D8273C1BAFF75800191970 /* Project object */;
+}

@@ -1,0 +1,36 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/Cutout/BorderSolid.cikernel 66043 2005-07-25 21:17:05Z kc $
+
+vec4 rampBorder(float ramp, float borderWidth, __color interiorColor, __color borderColor, __color exteriorColor)
+{
+  // Ramp is from 0..1.  We'll pick a edge factor that so that, say, if it is in [0..factor] we ramp between [exterior,border] and if it is from [1-factor..1] we ramp from [border,interior].
+  float edge = 1.0/borderWidth; // Blend the border edges into interior/exterior over their outermost 1px
+  float oneOverEdge = borderWidth;
+
+  float interiorRamp = clamp(ramp * oneOverEdge, 0.0, 1.0);
+  __color interiorEdge = mix(interiorColor, borderColor, interiorRamp);
+
+  float exteriorRamp = clamp((1.0 - ramp) * oneOverEdge, 0.0, 1.0);
+  __color exteriorEdge = mix(exteriorColor, borderColor, exteriorRamp);
+
+  return (ramp >= (1.0 - edge)) ? exteriorEdge :  ((ramp < 1.0) ? interiorEdge : borderColor);
+}
+
+kernel vec4 border(sampler image, sampler pattern, vec4 patternExtent, __color interiorColor, __color exteriorColor, float borderWidth)
+{
+  vec4 pix =  sample(image, samplerCoord(image)); 
+  float ramp = pix.r;
+
+  // Scale up to the pattern X width (and center on texel boundaries).  Also, since we are going to fade the edges, squeeze the pattern in by 1px on each side to avoid clipping all the red or indigo at small sizes.
+  float patternWidth = patternExtent.z;
+  
+  float patternPosition = ramp*(patternWidth+1.0)-0.5;
+  patternPosition = clamp(patternPosition, 0.5, patternWidth-0.5);
+  
+  vec2 patternCoord = samplerTransform(pattern, vec2(patternPosition, 0.5));
+  
+  vec4 borderColor = sample(pattern, patternCoord);
+
+  return rampBorder(ramp, borderWidth, interiorColor, borderColor, exteriorColor);
+}

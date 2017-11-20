@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {bindingTypeChanged = id; }; 
+            CLASS = PluginBindingsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_bindingsController" = NSArrayController; 
+                "_editorParentView" = NSView; 
+                "_eventSourceClassesSegmentedControl" = NSSegmentedControl; 
+                "_view" = NSView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

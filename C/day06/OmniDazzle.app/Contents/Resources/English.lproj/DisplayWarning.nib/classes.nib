@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                goToOmniStore = id; 
+                openDisplayPreferences = id; 
+                quit = id; 
+                sendFeedback = id; 
+                showAboutPanel = id; 
+                showFAQ = id; 
+                showLicenses = id; 
+                showPluginConfiguration = id; 
+                showPreferencesPanel = id; 
+                showReleaseNotes = id; 
+                toggleEventRecording = id; 
+                toggleMenuStatusItem = id; 
+            }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_displayAlertPanel" = NSPanel; 
+                aboutPanel = NSPanel; 
+                copyrightTextField = NSTextField; 
+                creditsTextView = NSTextView; 
+                fullReleaseNameTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

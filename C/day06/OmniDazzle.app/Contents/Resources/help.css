@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+    text-align: justify;
+    color: #404040;
+}
+
+p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+div.navi {
+    top: 0;
+    right: 0;
+    left: 0;
+    background: url("HelpImages/wavy-bar.png") top left repeat-x;
+	border-bottom: solid 1px #bfbfbf;
+	padding: 8px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.navispace {
+    height: 4em;
+}
+
+a:link { text-decoration: none; color: #0057cb }
+a:hover { color: #0057cb; text-decoration: underline; }
+a:active { color: #000066; }
+
+.navi a {
+    text-decoration: none;
+    color: #404040;
+    text-shadow: 0px 1px 1px white;
+}
+a:hover { color: #0057cb; text-decoration: underline; }
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.header {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    padding: 0px;
+    margin: 3px;
+	font-size: large;
+}
+
+span.UI {
+    font-weight: bold;
+}
+
+div.icon {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.icon img {
+    width: 110px;
+    height: 110px;
+}
+
+.Box {
+    margin-top: 8px;
+    margin-bottom: 8px;
+	padding-right: 24px;
+	padding-top: 0px !important;
+	padding-bottom: 14px;
+	background-color: #EEEEEE;
+	border: #444444 1px solid;
+    #clear: both;
+}
+
+ul.steps {
+    padding: 16px;
+    padding-left: 36px;
+    margin-left: 18px;
+    margin-right: 14px;
+    list-style-image: url("wand-bullet.png");
+    #list-style-position: inside;
+    background-color: #e6edff;
+	border: solid 1px #bfbfbf;
+}
+
+ul.steps li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+img.inline-image {
+    vertical-align: middle;
+}
+
+div.screenshot {
+    text-align: center;
+    float: right;
+    margin: 16px;
+}
+
+div.screenshot img {
+    border: gray 1px dotted;
+    width: 185;
+    height: 158;
+}
+
+div.screenshot-wide {
+    text-align: center;
+}
+
+div.screenshot-wide img {
+    border: gray 1px dotted;
+}

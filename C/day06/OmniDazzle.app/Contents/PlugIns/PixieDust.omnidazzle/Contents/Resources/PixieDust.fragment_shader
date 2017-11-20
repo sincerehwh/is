@@ -1,0 +1,41 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/PixieDust/PixieDust.m 74379 2006-04-20 22:59:44Z bungi $
+
+varying float particleRotation;
+varying float particleScale;
+
+float star(vec2 offset, float scale)
+{
+    // center the tex coords about the origin of the sprite and then scale it
+    vec2 texOffset = vec2(gl_TexCoord[0]) - offset;
+    vec2 scaledTex = scale * texOffset;
+    
+    // rotate by the current rotation
+    float s = sin(particleRotation);
+    float c = cos(particleRotation);
+    
+    float x = c*scaledTex.x - s*scaledTex.y;
+    float y = s*scaledTex.x + c*scaledTex.y;
+    
+    // Calculate a simple 4-point star.  The star portion will be > 0 and the blank portion == 0.
+    // Note that the blank portion will extend to infinity along each +/- axis line.
+    // Left alone, this would make the star get clipped at the edges of the particle's quad,
+    // which would give us a twinkle effect as they rotate, but it would be at the 45 degree
+    // always and wouldn't give room to do a shadow offset.  So, we'll clip at a smaller radius.
+    float a = clamp(1.0 - abs(x) * abs(y), 0.0, 1.0);
+    a = a*a;
+    
+    // Do the ramping to clip to a circule in texture space.
+    float maxDistRamp = (texOffset.s * texOffset.s) + (texOffset.t * texOffset.t);
+    maxDistRamp = maxDistRamp > 0.45*0.45 ? 0.0 : 1.0;
+    
+    return a * maxDistRamp;
+}
+
+void main()
+{
+    float scale = particleScale;
+    float a = star(vec2(0.5, 0.5), scale);
+    gl_FragColor = vec4(gl_Color.r, gl_Color.g, gl_Color.b, gl_Color.a * a);
+}

@@ -1,0 +1,23 @@
+// Copyright 2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/Application/ODAlphaScaleFilter.h 66043 2005-07-25 21:17:05Z kc $
+
+kernel vec4 comic(sampler mask, sampler gradient, sampler anger, sampler text, __color color0, __color color1)
+{
+    float g = sample(gradient, samplerCoord(gradient)).r;
+    g = sqrt(g);
+    
+    vec4 c = mix(color0, color1, g);
+
+    vec4 m = sample(mask, samplerCoord(mask));
+    vec4 bg = vec4(c.r, c.g, c.b, m.a);
+
+    vec4 angerpx = sample(anger, samplerCoord(anger));
+    bg = mix(bg, angerpx, angerpx.a);
+    
+    vec4 t = sample(text, samplerCoord(text));
+    vec4 res = mix(bg, t, t.a);
+    
+    // Have to return pre-multiplied color    
+    return vec4(res.r*bg.a, res.g*bg.a, res.b*bg.a, bg.a);
+}

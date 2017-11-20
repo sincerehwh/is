@@ -1,0 +1,8 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/PixieDust/PixieDust.m 74379 2006-04-20 22:59:44Z bungi $
+
+void main()
+{
+    gl_FragColor = gl_Color;
+}

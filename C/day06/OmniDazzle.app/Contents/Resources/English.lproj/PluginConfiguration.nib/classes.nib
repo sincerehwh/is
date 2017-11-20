@@ -1,0 +1,43 @@
+{
+    IBClasses = (
+        {CLASS = ColorView; LANGUAGE = ObjC; SUPERCLASS = FlippedView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FlippedView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = GearButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {
+                hidePlugin = id; 
+                noop = id; 
+                resetBindings = id; 
+                resetSettings = id; 
+                runGearMenu = id; 
+                toggleShowHiddenPlugins = id; 
+            }; 
+            CLASS = PluginConfigurationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bindingParentView = NSView; 
+                bodyView = NSView; 
+                controlsButton = NSButton; 
+                controlsView = NSView; 
+                descriptionButton = NSButton; 
+                descriptionView = NSView; 
+                descriptionWebView = WebView; 
+                gearButton = NSButton; 
+                gearMenu = NSMenu; 
+                headerView = PluginConfigurationHeader; 
+                noPluginView = NSView; 
+                pluginRecordController = NSArrayController; 
+                pluginRecordSelectionView = PluginRecordSelectionView; 
+                settingsParentView = NSView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = PluginConfigurationHeader; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = PluginDisplayModeCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {CLASS = PluginRecordSelectionView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

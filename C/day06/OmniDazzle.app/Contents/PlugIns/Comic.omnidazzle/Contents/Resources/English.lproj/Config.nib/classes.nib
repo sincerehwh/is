@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {insertString = id; }; 
+            CLASS = ComicPluginSettingsManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addStringButton = NSButton; 
+                removeStringButton = NSButton; 
+                stringsController = ComicStringArrayController; 
+                stringsTableView = NSTableView; 
+            }; 
+            SUPERCLASS = ODPluginSettingsManager; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {vectorTextFieldAction = id; }; 
+            CLASS = OAVectorView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {commaTextField = NSTextField; xField = NSTextField; yField = NSTextField; }; 
+            SUPERCLASS = NSControl; 
+        }, 
+        {
+            CLASS = ODPluginSettingsManager; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controlsView = NSView; settingsController = NSObjectController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = ODVectorViewObjectController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {vectorView = OAVectorView; }; 
+            SUPERCLASS = NSObjectController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Mouse</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.omnigroup.OmniDazzle.Footprint.Mouse</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>displayName</key>
+	<string>Mouse Foot</string>
+	<key>image</key>
+	<string>Mouse Print.pdf</string>
+	<key>sounds</key>
+	<array>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>mouse1</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>mouse2</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>mouse3</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>mouse4</string>
+		</dict>
+		<dict>
+			<key>likelihood</key>
+			<real>0.20000000000000001</real>
+			<key>soundName</key>
+			<string>mouse5</string>
+		</dict>
+	</array>
+</dict>
+</plist>

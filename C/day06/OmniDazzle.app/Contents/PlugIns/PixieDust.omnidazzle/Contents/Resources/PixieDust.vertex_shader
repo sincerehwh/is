@@ -1,0 +1,36 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Applications/Dazzle/PlugIns/PixieDust/PixieDust.vertex_shader 75775 2006-05-30 23:50:09Z bungi $
+
+uniform vec4 timeGravityFadeVelocity; // (time, gravity, fadeVelocity, unused)
+uniform vec4 secondaryColor; // gl_SecondaryColor has no alpha
+
+attribute vec4 velocityAndTime; // (dx, dy, dw, baseTime)
+attribute vec4 colorFraction; // (colorFraction, scale, initialRotation, unused)
+
+varying float particleRotation;
+varying float particleScale;
+
+void main(void)
+{
+    float deltaTime = timeGravityFadeVelocity.x - velocityAndTime.w;
+
+    // Blend between the input color and secondary color based on the color fraction.
+    vec4 color = mix(gl_Color, secondaryColor, colorFraction.x);
+    
+    // Then, fade it according to the fade velocity.
+    color.a = color.a * clamp(1.0 - deltaTime * timeGravityFadeVelocity.z, 0.0, 1.0);
+    
+    gl_FrontColor = color;
+
+    // Calculate the particle position
+    vec4 position = gl_Vertex;
+    position.xy = deltaTime * velocityAndTime.xy + position.xy; // velocity component
+    position.y += (deltaTime * deltaTime) * timeGravityFadeVelocity.y; // gravity acceleration component
+
+    particleRotation = colorFraction.z + velocityAndTime.z * deltaTime; // dw*time = current rotation
+    particleScale = colorFraction.y;
+    
+    gl_Position = gl_ModelViewProjectionMatrix * position;
+    gl_TexCoord[0] = gl_MultiTexCoord0;
+}

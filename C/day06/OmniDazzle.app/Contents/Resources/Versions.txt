@@ -1,0 +1,24 @@
+Build details:
+
+Product: OmniDazzle-1.1
+Tag: OmniDazzle/1.1.1/GM-v15.18
+Date: 2009-08-27 12:05:19 -0700
+Builder: kc
+Host: tb104i.private.omnigroup.com
+Revision: 118008
+
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Configurations 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Tools/strip-omni 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniBase 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniFoundation 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniAppKit 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniSoftwareUpdate 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniCoreImage 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Applications/CrashCatcher/Framework 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGames/OmniGL 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Applications/Dazzle 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Frameworks/OmniMachO 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Applications/CrashCatcher/CrashReports 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Applications/CrashCatcher/App 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/Scripts 118008
+/tags/OmniDazzle/1.1.1/GM-v15.18/OmniGroup/DiskImageTemplates 118008

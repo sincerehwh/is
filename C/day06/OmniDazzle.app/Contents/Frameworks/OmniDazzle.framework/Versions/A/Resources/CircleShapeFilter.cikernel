@@ -1,0 +1,16 @@
+// Copyright 2004-2006 Omni Development, Inc.  All rights reserved.
+//
+// $Header: svn+ssh://source.omnigroup.com/Source/svn/Omni/trunk/OmniGroup/Applications/Dazzle/PlugIns/Cutout/BorderSolid.cikernel 66043 2005-07-25 21:17:05Z kc $
+
+kernel vec4 circle(vec2 center, float radius)
+{
+  float halfEdgeWidth = 0.5; // Hard coded now that we are using a gaussian blur to generate the edge ramp
+  
+  vec2 vectorFromCenter  = destCoord () - center;
+  float distanceFromCenter = length(vectorFromCenter);
+
+  float distantceFromEdge = clamp(radius - distanceFromCenter, -halfEdgeWidth, halfEdgeWidth);
+
+  float percent = 1.0 - (distantceFromEdge / (2.0*halfEdgeWidth) + 0.5);
+  return vec4(percent, percent, percent, 1.0);
+}
